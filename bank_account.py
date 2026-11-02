@@ -18,7 +18,7 @@ class BankDetails(PersonalDetails):
     def withdraw(self, amount):
         if amount <= 0:
             print("Withdrawal amount must be positive.")
-        elif amount > self.balance:l
+        elif amount > self.balance:
             print("Insufficient funds. Current balance:", self.balance)
         else:
             self.balance -= amount
